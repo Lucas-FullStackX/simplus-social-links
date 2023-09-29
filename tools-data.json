@@ -1,0 +1,23 @@
+[
+	{
+		"active": true,
+		"created_at": "2022-09-17",
+		"logo": "https://res.cloudinary.com/dhwxnbnaj/image/upload/v1694979334/Simplus/SimplusLabs_jzib51.svg",
+		"name": "Simplus Labs",
+		"url": "https://github.com/Simplus-Labs"
+	},
+	{
+		"active": true,
+		"created_at": "2023-09-17",
+		"logo": "https://res.cloudinary.com/dhwxnbnaj/image/upload/v1694979334/Simplus/SimplusLabs_jzib51.svg",
+		"name": "Simplus Labs",
+		"url": "https://github.com/Simplus-Labs"
+	},
+	{
+		"active": false,
+		"created_at": "2023-09-17",
+		"logo": "https://res.cloudinary.com/dhwxnbnaj/image/upload/v1694979334/Simplus/SimplusLabs_jzib51.svg",
+		"name": "Simplus Labs",
+		"url": "https://github.com/Simplus-Labs"
+	}
+]
