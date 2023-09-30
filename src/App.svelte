@@ -1,4 +1,5 @@
 <script>
+	import TwitterForm from './lib/components/Form/TwitterForm.svelte';
 	import MainLayout from './lib/components/layout/MainLayout.svelte';
 </script>
 
@@ -12,10 +13,8 @@
 			</div>
 			<div class="text-neutral-700">Simplus React Boilerplate by Simplus Labs</div>
 		</div>
-		<div
-			class="border-dashed border-2 rounded-md h-96 text-4xl font-bold items-center flex justify-center text-neutral-400"
-		>
-			Tool Here
+		<div class="items-center flex justify-center">
+			<TwitterForm />
 		</div>
 	</div>
 </MainLayout>
