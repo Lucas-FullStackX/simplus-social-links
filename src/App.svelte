@@ -1,6 +1,7 @@
 <script>
-	import TwitterForm from './lib/components/Form/TwitterForm.svelte';
-	import MainLayout from './lib/components/layout/MainLayout.svelte';
+	import LinkedInForm from '$lib/components/Form/LinkedInForm.svelte';
+	import TwitterForm from '$lib/components/Form/TwitterForm.svelte';
+	import MainLayout from '$lib/components/layout/MainLayout.svelte';
 </script>
 
 <MainLayout>
@@ -9,12 +10,13 @@
 			<div
 				class="text-5xl font-bold bg-gradient-to-b from-gradient-start via-gradient-middle to-gradient-end bg-clip-text text-transparent"
 			>
-				Simplus React Boilerplate
+				Simplus Svelte Boilerplate
 			</div>
-			<div class="text-neutral-700">Simplus React Boilerplate by Simplus Labs</div>
+			<div class="text-neutral-700">Simplus Svelte Boilerplate by Simplus Labs</div>
 		</div>
-		<div class="items-center flex justify-center">
+		<div class="items-center flex flex-col gap-6 justify-center">
 			<TwitterForm />
+			<LinkedInForm />
 		</div>
 	</div>
 </MainLayout>

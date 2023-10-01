@@ -152,12 +152,22 @@ export const copy: Action<HTMLElement, Parameters | string, Attributes> = (eleme
 
 export const generateLink = (
 	form: {
+		url?: string | null;
+		title?: string | null;
 		message?: string | null;
 	},
 	type: LINK_TYPE
 ) => {
-	if (type === LINK_TYPE.EMAIL) {
+	if (type === LINK_TYPE.EMAIL && form.message) {
 		const url = `mailto:?subject=${encodeURIComponent(form.message?.toString() || '')}`;
+		return url;
+	}
+	if (type === LINK_TYPE.LINKEDIN && form.url) {
+		const url = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(
+			form.url?.toString() || ''
+		)}&title=${encodeURIComponent(form.title?.toString() || '')}&summary=${encodeURIComponent(
+			encodeURIComponent(form.message?.toString() || '')
+		)}`;
 		return url;
 	}
 	const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(

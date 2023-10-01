@@ -10,7 +10,6 @@
 
 	function handleSubmit(event: Event): void {
 		event.preventDefault();
-		console.log(formValues);
 		formValues.url = generateLink(formValues, LINK_TYPE.TWITTER);
 	}
 	function handleInputChange(event: Event): void {
