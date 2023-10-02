@@ -170,6 +170,12 @@ export const generateLink = (
 		)}`;
 		return url;
 	}
+	if (type === LINK_TYPE.FACEBOOK && form.url) {
+		const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(
+			form.url?.toString() || ''
+		)}`;
+		return url;
+	}
 	const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
 		form.message?.toString() || ''
 	)}`;

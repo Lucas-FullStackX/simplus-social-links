@@ -2,6 +2,7 @@
 	import LinkedInForm from '$lib/components/Form/LinkedInForm.svelte';
 	import TwitterForm from '$lib/components/Form/TwitterForm.svelte';
 	import MainLayout from '$lib/components/layout/MainLayout.svelte';
+	import FacebookForm from '$lib/components/Form/FacebookForm.svelte';
 </script>
 
 <MainLayout>
@@ -17,6 +18,7 @@
 		<div class="items-center flex flex-col gap-6 justify-center">
 			<TwitterForm />
 			<LinkedInForm />
+			<FacebookForm />
 		</div>
 	</div>
 </MainLayout>
