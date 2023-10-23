@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { HTMLInputAttributes } from 'svelte/elements';
-	import { cn } from '$lib/utils';
+	import { cn } from '$utils';
 	import type { InputEvents } from '.';
 	import Label from '../label/label.svelte';
 
